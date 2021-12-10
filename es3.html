@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Trova il maggiore di 3 numeri </h1>
+<form id="frm1" >
+ Numero 1 <input type="number" name="Hnumero1" value=""><br>
+ Numero 2 <input type="number" name="Hnumero2" value=""><br>
+ Numero 3 <input type="number" name="Hnumero3" value=""><br><br>
+
+</form>
+
+<p>Vedi il risultato: </p>
+Numero 1 = 
+<p id="numero1"></p>
+Numero 2 = 
+<p id="numero2"></p>
+Numero 3 = 
+<p id="numero3"></p>
+Numero maggiore = 
+<p id="demo"></p>
+<script>
+function myFunction(){ 
+
+var x = document.getElementById("frm1");
+
+var numero1=x.elements[0].value;  
+document.getElementById("numero1").innerHTML =numero1;
+var numero2=x.elements[1].value;
+document.getElementById("numero2").innerHTML =numero2;
+var numero3=x.elements[2].value;
+document.getElementById("numero3").innerHTML =numero3;
+
+document.getElementById("demo").innerHTML =NumeroMaggiore(numero1,numero2,numero3);
+
+
+function NumeroMaggiore(numero1,numero2,numero3){
+if(numero1>=numero2)
+{
+    if(numero1>=numero3)
+    {
+       return numero1;
+    }
+    else
+    {
+        return numero3;
+    }
+}
+else
+{
+    if(numero2>=numero3)
+    {
+       return numero2;
+    }
+    else
+    {
+       return numero3;
+    }
+}
+}
+
+
+}
+function Dislivello(h1,h2,h3){
+return h1>h2>h3
+}
+
+</script>
+<button onclick="myFunction()">Trova il numero maggiore</button>
+
+
+
+
+</body>
+</html>
