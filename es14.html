@@ -30,15 +30,28 @@ ul li {
     cursor: pointer;
 }
 
-ul li:nth-child(odd) {
-    background: linear-gradient(to right,rgb(0, 255, 213), rgb(216, 18, 150));
-    text-align: left;
-    padding-left: 5%;
-    transform: perspective(500px) rotateY(30deg);
+a.button7 { 
+  font-weight: 700; 
+  color: white; 
+ 
+margin:20px; 
+  text-decoration: none; 
+  padding: .8em 1em calc(.8em + 3px); 
+  border-radius: 3px; 
+  background: rgb(64,199,129); 
+  box-shadow: 0 -3px rgb(53,167,110) inset; 
+  transition: 0.2s; 
+} 
+a.button7:hover { background: rgb(53, 167, 110); } 
+a.button7:active { 
+  background: rgb(33,147,90); 
+  box-shadow: 0 3px rgb(33,147,90) inset; 
+} 
+ 
 }
 
 ul li:nth-child(even) {
-    background: linear-gradient(to left, orange, tomato);
+    background: linear-gradient(to left, rgb(0, 255, 0), tomato);
     text-align: right;
     padding-right: 10%;
     transform: perspective(400px) rotateY(-45deg);
@@ -54,8 +67,8 @@ ul li:nth-child(even):hover {
     padding-right: 5%;
 }
 #miodiv{
-    background-color: rgb(240, 81, 8);
-    height: 700px;
+    background-color: rgb(8, 147, 240);
+    height: 1000px;
     
 }
 
